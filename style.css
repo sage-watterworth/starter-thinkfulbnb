@@ -53,7 +53,6 @@ img {
 .group {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .item {
@@ -111,21 +110,21 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  justify-content: space-between;
+ /* justify-content: space-between;
   display: flex;
   flex-direction: column;
-  width: max-content;
+  width: max-content;*/
 
-}
-
-form > div {
-  display: flex;
-  justify-content: space-between;
 }
 
 form label {
   font-weight: bold;
   justify-content: flex-start;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form select,
@@ -158,46 +157,42 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
-  section {
-    padding: 0 10%;
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  header nav ul {
+    align-items: center;
   }
 
   .group {
-    display: flex;
     flex-direction: row;
+    align-items: center;
   }
-
-  .item {
-    flex: 1;
-    margin: 10px;
-  }
-
-  .item-double {
-    flex: 2;
-  }
-
 
   form {
-    border: 2px solid #ff385c;
-    padding: 10px;
-    align-content: center;
     display: flex;
-    flex-direction: row;
-    width: 100%;
-
+    align-items: center;
+    justify-content: center;
   }
 
-  form label {
-    font-weight: bold;
+  form div {
+    flex-direction: column;
   }
 
-  form select,
-  form input {
-    margin-bottom: 20px;
-    width: 180px;
-    justify-content: space-around;
+  form button {
+    flex: 1;
   }
 
-
-
+  form select, form input {
+    margin-bottom: 0px;
+  }
 }
