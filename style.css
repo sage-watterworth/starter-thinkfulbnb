@@ -1,21 +1,9 @@
 /* -------  General Styles ------- */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
+  display: grid;
 }
-
-header h1 {
-  /* Sets text color to white. */
-  color: #fff;
-  /* Centers the text. */
-  text-align: center;
-  /* Removes the default margin and spacing around the `h1` element. */
-  margin: 0;
-  /* Pushes the text down 20 pixels from the top of the page. */
-  padding-top: 20px;
-}
-
-
 
 h2 {
   font-size: 26px;
@@ -36,15 +24,14 @@ p {
 
 section {
   padding: 20px;
-  margin-top: 20px;
 }
 
 section.alternate-background {
-  background-color: #00a699;
+  background-color: #00A699;
   color: #fff;
 }
 
-img {
+main img {
   width: 100%;
 }
 
@@ -67,7 +54,7 @@ img {
 /* -------  Navigation ------- */
 
 header {
-  background-color: #ff385c;
+  background-color: #FF385C;
   padding: 20px 20px 0 20px;
   text-align: center;
 }
@@ -108,18 +95,12 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #ff385c;
+  border: 2px solid #FF385C;
   padding: 10px;
- /* justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  width: max-content;*/
-
 }
 
 form label {
   font-weight: bold;
-  justify-content: flex-start;
 }
 
 form div {
@@ -127,14 +108,13 @@ form div {
   justify-content: space-between;
 }
 
-form select,
-form input {
+form select, form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 200px;
 }
 
 form button {
-  background-color: #ff385c;
+  background-color: #FF385C;
   border: none;
   color: #fff;
   font-size: 24px;
@@ -145,7 +125,7 @@ form button {
 /* -------  Footer ------- */
 
 footer {
-  background-color: #ff385c;
+  background-color: #FF385C;
 }
 
 footer p {
