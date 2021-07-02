@@ -1,7 +1,11 @@
 /* -------  General Styles ------- */
 
 body {
+<<<<<<< HEAD
   font-family: 'Lato', sans-serif;
+=======
+  font-family: "Lato", sans-serif;
+>>>>>>> 695a7f606539109a5646781af6e31fbc069d409f
   display: grid;
 }
 
@@ -142,6 +146,12 @@ footer p {
     justify-content: space-between;
     padding: 0;
   }
+  
+  body {
+  font-family: "Lato", sans-serif;
+  display: grid;
+}
+
 
   .logo {
     margin: 14px 0 14px 20px;
